@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row p-3">
+            <h1 class="text-center ">My Personal TodoList</h1>
+            <div class="col-md-6 offset-md-3 mb-3">
+                <h2>Task Manager</h2>
+                <form id="taskForm">
+                    <div class="mb-3">
+                        <label for="taskTitle" class="form-label">Titre de la tâche</label>
+                        <input type="text" id="taskTitle" placeholder="Task Title" name="taskTitle" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="taskContent" class="form-label">Descriptif de la tâche</label>
+                        <textarea id="taskContent" placeholder="Task Content" name="taskContent" class="form-control" required></textarea>
+                    </div>
+                    
+
+                    <button class="btn btn-primary" type="submit">Add Task</button>
+                </form>
+            </div>
+            <div class="col-md-4 p-0 border">
+                <h2 class="bg-danger text-light text-center">ToDo</h2>
+                <div class="p-2" id="tasks" style="height: 40vh;;overflow-y: auto;"></div>
+            </div>
+            <div class="col-md-4 p-0 border">
+                <h2 class="bg-warning text-light text-center">Doing</h2>
+                <div class="p-2" id="tasksDoing" style="height: 40vh;overflow-y: auto;"></div>
+            </div>
+            <div class="col-md-4 p-0 border">
+                <h2 class="bg-success text-light text-center">Done</h2>
+                <div class="p-2" id="tasksDone" style="height: 40vh;overflow-y: auto;"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
